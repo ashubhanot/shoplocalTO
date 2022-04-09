@@ -1,0 +1,375 @@
+/* #box-small {
+    width: 300px;
+    height: auto;
+} */
+.details-info-card {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    height: 500px;
+    left:15%;
+    width:70%;
+    background-color: #c3c6b1;
+    gap:20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+
+.details-text {
+    width: 40%;
+    font-size: 25px;
+    padding-left: 30px;;
+
+}
+
+.details-image {
+    width: 60%;  
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+
+.all-product-cards {
+    position: absolute;
+    left:15%;
+    width:70%;
+}
+
+.product-card {
+    display: inline-block;
+    margin: 20px;
+    background-color: #c3c6b1;
+    font-size: 20px;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    text-align: center;
+}
+ 
+
+.product-card img{
+   
+padding: 15px;
+    object-fit: cover;
+    width: 90%;
+    height: 50%;
+}
+
+
+
+/* img {
+    position: relative;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+} */
+#col2 {
+max-width: max-content;
+padding-right: 250px;
+background-color: #c3c6b1;
+}
+#flex-grid{
+    display: flex;
+    /* flex-direction: row; */
+     justify-content: space-between; 
+    margin: 20px 10px 20px 10px;
+    /* columns: 2; */
+    /* flex-flow: row wrap; */
+    gap: 50px; 
+    /* align-items: baseline; */
+    background-color: #c3c6b1;
+    
+    
+}
+#col1 #col2 {
+    width: 40%;
+    display: block;
+    border-right: 20px #c3c6b1;
+    /* grid-row: 3; */
+}
+
+#col3 {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+body {
+    font-family: 'Bentham', serif;
+    background-color: rgb(236, 235, 226);
+    margin: 0 80px 0 80px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* NAV BAR */
+nav {
+    display: flex;
+    background-color: #c3c6b1;
+    justify-content: flex-end;
+    margin: 0 -80px 0 -80px
+}
+
+nav > h2{
+    margin-right: auto;
+    padding: 0px 40px 0px 20px;
+  }
+.base-title a {
+    color: black;
+    font-size: 30px;
+
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+    margin: auto 35px auto 35px;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+
+nav a:after {    
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left:50%;
+    position: absolute;
+    background: white;
+    transition: width 0.5s ease 0s, left 0.3s ease 0s;
+}
+
+nav a:hover:after { 
+    width: 100%; 
+    left: 0%; 
+    background: black;
+}
+
+nav a:hover {
+    color: black
+}
+
+/* index */
+
+.card {
+    position: relative;
+    display: inline-flex;
+    margin: 20px;
+    background-color: #c3c6b1;
+    font-size: 25px;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.card:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.card:hover .card-content {
+    color: white
+}
+h3 {
+    text-align: center;
+}
+
+.card-content {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    align-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    padding: 0px;
+    background-color: #c3c6b1;
+    border-radius: 5px;
+}
+
+.index_form {
+    margin: 20px;
+
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+p {
+    margin: 15px 0 15px 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.delete-form{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.delete-form a {
+    font-size: 20px;
+    color: #95AA63;
+    text-decoration: none;
+}
+.delete-form a:hover{
+    color: #353d23;
+   
+}
+.btn {
+    background-color: rgb(236, 235, 226);
+    color: black;
+    border: 2px solid #95AA63;
+    text-align: center;
+    padding: 10px 28px;
+}
+.btn:hover{
+    background-color: #95AA63;
+   
+}
+
+.createform{
+  line-height: 30px;
+  
+}
+
+
+/* details page */
+
+
+.details-card a, button {
+    text-decoration: none;
+    font-family: 'Bentham', serif;
+    font-size: 20px;
+    color: black
+
+}
+.details-card-text p {
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.details-card button {
+    border-radius: 5px;
+}   
+
+.details-card form {
+    padding-left: 30px;
+    }
+
+/* buttons */
+
+button:hover {
+    border-radius: 5px;
+    background-color: lightgrey;  
+    cursor: pointer;
+
+}  
+
+a:hover, button:hover {
+    color: white;
+}  
+
+
+
+/* add new form */
+
+.createform, .log-in-form {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c3c6b1;
+    padding: 15px;
+    width: 450px;
+    margin:auto;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+}
+
+.createform td {
+justify-items: center;
+text-align: center;
+}
+
+#id_image {
+    padding-left: 45px;
+}
+
+/*home page */
+.home-page {
+    margin-top: 30px;
+    background-image: url('images/small_business_background.jpeg');
+    /* width: 900px; */
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    opacity: 40%;
+    border-radius: 5px;
+}
+
+.home-page-text {
+    padding: 15px;
+    margin-top: 30px;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    border-width: 2px;
+    background-color:rgb(236, 235, 226, 0.8);
+    color: rgb(55, 54, 54);
+    border-style: solid;
+    border-color: grey;
+    text-align: center;
+
+}
+
+.home-page-text h1 {
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+}
+.homecard {
+    text-align: center;
+}
+.homecard a {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+    text-decoration: none;
+    background-color: rgb(195,198,177,0.9);
+    margin: 100px;
+    border-style: solid;
+    padding: 50px 80px 50px 80px;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: larger;
+    
+}
+
+.homecard a:hover {
+    color: white;
+}
